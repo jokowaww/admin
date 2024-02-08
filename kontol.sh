@@ -2,7 +2,7 @@
 apt update && apt upgrade
 apt install python3 python3-pip git
 cd /etc/bot
-wget -q https://github.com/jokowaww/admin/raw/main/kontol.zip
+wget -q https://raw.githubusercontent.com/jokowaww/admin/main/kontol.zip
 unzip kontol.zip
 rm -rf kontol.zip
 pip3 install -r regis/requirements.txt
