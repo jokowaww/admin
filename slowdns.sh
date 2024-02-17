@@ -5,14 +5,6 @@ mkdir /var/lib/ssnvpn-pro/
 rm -f /usr/bin/menu-ssh
 
 
-wget -q -O /var/lib/ssnvpn-pro/ipvps.conf "https://raw.githubusercontent.com/jokowaww/admin/main/ipvps.conf"
-wger -q -O /usr/bin/tendang "https://raw.githubusercontent.com/jokowaww/admin/main/tendang.sh"
-wget -q -O /usr/bin/restart "https://raw.githubusercontent.com/jokowaww/admin/main/restart.sh"
-chmod +x /usr/bin/restart
-
-
-chmod +x /usr/bin/tendang
-chmod +x /usr/bin/autokill
 
 #setting IPtables
 iptables -I INPUT -p udp --dport 5300 -j ACCEPT
