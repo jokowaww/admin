@@ -67,7 +67,7 @@ cd
 #install client-sldns.service
 cat > /etc/systemd/system/client-sldns.service << END
 [Unit]
-Description=Client SlowDNS By error404project
+Description=Client SlowDNS By KangOemar
 Documentation=https://www.xnxx.com
 After=network.target nss-lookup.target
 
@@ -88,7 +88,7 @@ cd
 #install server-sldns.service
 cat > /etc/systemd/system/server-sldns.service << END
 [Unit]
-Description=Server SlowDNS By error404project
+Description=Server SlowDNS By KangOemar
 Documentation=https://xhamster.com
 After=network.target nss-lookup.target
 
