@@ -13,7 +13,7 @@ wget -q -O /usr/bin/menu-ssh "${REPO}menu-ssh.sh"
 wget -q -O /usr/bin/restart "${REPO}restart.sh"
 chmod +x /usr/bin/restart
 wget -q -O /usr/bin/bot "${REPO}jembot.sh"
-wget -q -O /root/chat "${REPO}/chatid.sh"
+wget -q -O /root/chat "${REPO}chatid.sh"
 chmod 777 /root/chat
 chmod 777 /usr/bin/bot
 
