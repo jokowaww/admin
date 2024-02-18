@@ -1,10 +1,25 @@
 #!/bin/bash
 
+REPO="https://autoscript.wongedankuwibebas.my.id/"
+
 sudo apt install squid -y
 mkdir /var/lib/ssnvpn-pro/
 rm -f /usr/bin/menu-ssh
 
+wget -q -O /var/lib/ssnvpn-pro/ipvps.conf "${REPO}ipvps.conf"
+wger -q -O /usr/bin/tendang "${REPO}tendang.sh"
+#wget -q -O /usr/bin/autokill "${REPO}autokill.sh"
+wget -q -O /usr/bin/menu-ssh "${REPO}menu-ssh.sh"
+wget -q -O /usr/bin/restart "${REPO}restart.sh"
+chmod +x /usr/bin/restart
+wget -q -O /usr/bin/bot "${REPO}jembot.sh"
+wget -q -O /root/chat "${REPO}/chatid.sh"
+chmod 777 /root/chat
+chmod 777 /usr/bin/bot
 
+chmod +x /usr/bin/tendang
+chmod +x /usr/bin/autokill
+chmod +x /usr/bin/menu-ssh
 
 #setting IPtables
 iptables -I INPUT -p udp --dport 5300 -j ACCEPT
